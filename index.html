@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Memory Games | EDEN SCHOOL</title>
+	</head>
+	<body>
+		<div class="burger">
+			<div class="in-div">
+				<button class="jaune btn-burger">Restart</button>
+				<button class="btn-burger">New Game</button>
+				<button id="comeback-btn" class="btn-burger">Resume Game</button>
+			</div>
+		</div>
+		<header>
+			<nav>
+				<h2>memory</h2>
+				<button id="burger-jsp" class="btn-menu">Menu</button>
+			</nav>
+		</header>
+		<main>
+			<div class="grid">
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+				<button class="rond-grid"></button>
+			</div>
+			<section class="foot-main">
+				<div class="score">
+					<p>P1</p>
+					<span>0</span>
+				</div>
+				<div class="score">
+					<p>P2</p>
+					<span>0</span>
+				</div>
+				<div class="score">
+					<p>P3</p>
+					<span>0</span>
+				</div>
+				<div class="score">
+					<p>P4</p>
+					<span>0</span>
+				</div>
+			</section>
+		</main>
+		<article class="start-game">
+			<section class="child-start">
+				<h1>memory</h1>
+				<div class="child-start-game">
+					<div class="div-child">
+						<span>Select Theme</span>
+						<div class="btn-in">
+							<button class="btn-select color">Number</button>
+							<button class="btn-select">Icons</button>
+						</div>
+					</div>
+					<div class="div-child">
+						<span>Numbers of Players</span>
+						<div class="btn-in">
+							<button class="player color">1</button>
+							<button class="player">2</button>
+							<button class="player">3</button>
+							<button class="player">4</button>
+						</div>
+					</div>
+					<div class="div-child">
+						<span>Grid Size</span>
+						<div class="btn-in">
+							<button class="btn-grid color">4x4</button>
+							<button class="btn-grid">6x6</button>
+						</div>
+					</div>
+					<button class="btn-start-game">Start Game</button>
+				</div>
+			</section>
+		</article>
+		<script src="./script.js"></script>
+	</body>
+</html>
