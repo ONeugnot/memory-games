@@ -7,6 +7,12 @@
 	font-family: "Atkinson Hyperlegible", serif;
 }
 
+body {
+	height: 100vh;
+}
+
+
+
 .start-game {
 	height: 100vh;
 	display: flex;
@@ -112,7 +118,108 @@ button {
 	border-radius: 20px;
 }
 
+header {
+	width: 100%;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	color: #152938;
+}
+
+.btn-menu {
+	background-color: #fda214;
+	color: #fcfcfc;
+	font-size: 16px;
+	font-weight: 700;
+	width: 80px;
+	padding: 10px;
+	border-radius: 26px;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 85vh;
+	justify-content: space-between;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 18vw);
+	grid-template-rows: repeat(4, 18vw);
+	grid-gap: 10px;
+	margin-top: 70px;
+}
+
+.rond-grid {
+	background-color: #304859;
+	border-radius: 50%;
+}
+
+.foot-main {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.score:nth-child(2) {
+	background-color: #fda214;
+	color: #fcfcfc;
+}
+
+.score:nth-child(2) {
+	background-color: #fda214;
+	color: #fcfcfc;
+
+	p {
+		color: #fcfcfc;
+	}
+
+	span {
+		color: #fcfcfc;
+	}
+}
+
+.score {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #304859;
+	padding: 20px;
+	width: 18%;
+	gap: 10px;
+	background-color: #dfe7ec;
+}
+
+.score span {
+	color: #304859;
+	font-size: 24px;
+	font-weight: 700;
+}
+.score p {
+	color: #7191a5;
+	font-size: 15px;
+	font-weight: 700;
+}
+.nav-burger {
+	display: none;
+}
+
+
+
 @media screen and (min-width: 768px) {
+	main {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
 	.child-start {
 		width: 80%;
 	}
@@ -125,7 +232,65 @@ button {
 		border-radius: 26px;
 		padding: 10px;
 	}
+	.grid {
+		grid-template-columns: repeat(4, 10vw);
+		grid-template-rows: repeat(4, 10vw);
+	}
+
+	.score {
+		width: 30%;
+		padding: 5px;
+		border-radius: 7px;
+	}
+
+	.score p {
+		width: 85%;
+		text-align: start;
+	}
+
+	.score span {
+		text-align: start;
+		width: 85%;
+	}
+
+	.foot-main {
+		gap: 10px;
+	}
+
+	.grid {
+		grid-template-columns: repeat(4, 15vw);
+		grid-template-rows: repeat(4, 15vw);
+	}
+
+	.btn-menu {
+		display: none;
+	}
+	.nav-burger {
+		display: block;
+		display: flex;
+		flex-direction:row ;
+		gap: 10px;
+		width: 40%;
+	}
+	.nav-burger button:nth-child(1) {
+		background-color: #fda214;
+		color: white;
+
+	}
+
+	.nav-burger button {
+		width: 45%;
+		padding: 10px;
+		background-color: #DFE7EC;
+		font-size: 20px;
+		font-weight: 700;
+		color: #304859;
+		border-radius: 26px;
+		text-align: center;
+	}
+
 }
+
 
 @media screen and (min-width: 1440px) {
 	.child-start {
@@ -144,6 +309,11 @@ button {
 		border-radius: 26px;
 		padding: 8px;
 	}
+	.grid {
+		grid-template-columns: repeat(4, 8vw);
+		grid-template-rows: repeat(4, 8vw);
+	}
+
 }
 
 /* popup burger */
@@ -187,109 +357,3 @@ button {
 }
 /* second page start */
 
-header {
-	width: 100%;
-}
-
-nav {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	padding: 20px;
-	color: #152938;
-}
-
-.btn-menu {
-	background-color: #fda214;
-	color: #fcfcfc;
-	font-size: 16px;
-	font-weight: 700;
-	width: 80px;
-	padding: 10px;
-	border-radius: 26px;
-}
-
-main {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	height: 85vh;
-	justify-content: space-between;
-}
-
-.grid {
-	display: grid;
-	grid-template-columns: repeat(4, 20vw);
-	grid-template-rows: repeat(4, 20vw);
-	grid-gap: 10px;
-	margin-top: 70px;
-}
-
-.rond-grid {
-	background-color: #304859;
-	border-radius: 50%;
-}
-
-.foot-main {
-	display: flex;
-	justify-content: space-between;
-	width: 90%;
-}
-
-.score:nth-child(2) {
-	background-color: #fda214;
-	color: #fcfcfc;
-}
-
-.score:nth-child(2) {
-	background-color: #fda214;
-	color: #fcfcfc;
-
-	p {
-		color: #fcfcfc;
-	}
-
-	span {
-		color: #fcfcfc;
-	}
-}
-
-.score {
-	display: flex;
-
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: #304859;
-	padding: 20px;
-	gap: 10px;
-	background-color: #dfe7ec;
-}
-
-.score span {
-	color: #304859;
-	font-size: 24px;
-	font-weight: 700;
-}
-.score p {
-	color: #7191a5;
-	font-size: 15px;
-	font-weight: 700;
-}
-@media screen and (min-width: 768px) {
-	.grid {
-		grid-template-columns: repeat(4, 10vw);
-		grid-template-rows: repeat(4, 10vw);
-	}
-
-	.score {
-		width: 20%;
-		padding: 5px;
-		align-items: start;
-		text-align: start;
-	}
-	.score p::before {
-		content: "Player 2";
-		text-indent: 0;
-	}
-}
